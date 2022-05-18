@@ -3,6 +3,9 @@ import Section from './components/Section/Section'
 import Profile from './components/Profile/Profile'
 import data from './components/Profile/Profile.json'
 
+import StatisticsList from 'components/Statistics/StatisticsList';
+import statistics from 'components/Statistics/Statistics.json';
+
 export default function App() {
     const { username, tag, location, avatar, stats } = data;
   return (
@@ -18,7 +21,10 @@ export default function App() {
           </Section>
           
           <Section title={'2 - Statistics section'}>
-
+              <StatisticsList
+                  title="Upload stats"
+                  items={statistics}
+              />
           </Section>
     </div>
   );
