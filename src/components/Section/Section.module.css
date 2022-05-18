@@ -1,0 +1,12 @@
+.container {
+  margin-top: 60px;
+}
+
+.title {
+  text-align: center;
+  color: rgb(39, 29, 29);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
