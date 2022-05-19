@@ -9,6 +9,9 @@ import statistics from 'components/Statistics/Statistics.json';
 import FriendsList from 'components/Friends/FriendList';
 import friends from 'components/Friends/Friends.json';
 
+import TransactionsHistory from 'components/Transactions/Transactions';
+import items from 'components/Transactions/Transaction.json';
+
 export default function App() {
     const { username, tag, location, avatar, stats } = data;
   return (
@@ -33,6 +36,12 @@ export default function App() {
           <Section title={'3 - Friends List'}>
               <FriendsList
                   friends={friends}
+              />
+          </Section>
+
+          <Section title={'4 - Transactions History'}>
+              <TransactionsHistory
+                  items={items}
               />
           </Section>
     </div>

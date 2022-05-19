@@ -1,0 +1,28 @@
+.transactionHistory {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 500px;
+}
+
+.value {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.column {
+    border: 1px solid #ddd;
+    padding: 8px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04aa6d;
+    color: white;
+}
+
+.head:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.head:hover {
+    background-color: #ddd;
+}
