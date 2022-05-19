@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import s from './Statistics.module.css';
 import StatisticsItem from './StatisticsItem';
-// import data from './Statistics.json'
+
 
 const StatisticsList = ({ items, title }) => {
     return (

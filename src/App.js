@@ -6,6 +6,9 @@ import data from './components/Profile/Profile.json'
 import StatisticsList from 'components/Statistics/StatisticsList';
 import statistics from 'components/Statistics/Statistics.json';
 
+import FriendsList from 'components/Friends/FriendList';
+import friends from 'components/Friends/Friends.json';
+
 export default function App() {
     const { username, tag, location, avatar, stats } = data;
   return (
@@ -20,10 +23,16 @@ export default function App() {
               />
           </Section>
           
-          <Section title={'2 - Statistics section'}>
+          <Section title={'2 - Statistics'}>
               <StatisticsList
                   title="Upload stats"
                   items={statistics}
+              />
+          </Section>
+
+          <Section title={'3 - Friends List'}>
+              <FriendsList
+                  friends={friends}
               />
           </Section>
     </div>
