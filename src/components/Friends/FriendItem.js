@@ -4,9 +4,7 @@ import s from './Friends.module.css';
 const FriendItem = ({ avatar, name, isOnline }) => {
     return (
         <li className={s.item}>
-            {isOnline
-                ? <span className={s.statusTrue}></span>
-                : <span className={s.statusFalse}></span>}
+            {<span className={ isOnline?s.statusTrue:s.statusFalse}></span>}
             <img className={s.avatar} src={avatar} alt="User avatar" width="48" />
             <p className={s.name}>{ name }</p>
         </li>
